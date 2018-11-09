@@ -1,23 +1,25 @@
+const name = 'Gatsby Default Starter'
+
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: name,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: name,
+        short_name: name,
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',

@@ -1,0 +1,19 @@
+files:
+  include:
+    - '**/*.scss'
+rules:
+  class-name-format:
+    - 1
+    - convention: camelcase
+  leading-zero:
+    - 1
+    - include: true
+  # no-url-protocols is scheduled to be deprecated in favour of the no-url-domains rule in sass-lint 2.0
+  no-url-protocols: 0
+  property-sort-order:
+    - 1
+    # https://github.com/sasstools/sass-lint/blob/v1.12.1/lib/config/property-sort-orders/concentric.yml
+    - order: concentric
+  variable-name-format:
+    - 1
+    - convention: hyphenatedlowercase

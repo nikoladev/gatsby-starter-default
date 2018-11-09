@@ -1,0 +1,20 @@
+{
+  "extends": [
+    // - standard@12 doesn't work with these extensions because some of it's configs are
+    //   in node_modules/standard and others in node_modules
+    // - also, the eslint in the node_modules is the one gatsby installs, which is 4.
+    //   standard@12 expects eslint@5
+    //   - try it again when gatsby updates eslint to version 5
+    "eslint-config-standard/index",
+    "eslint-config-standard-jsx/index"
+  ],
+  "rules": {
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "ignore"
+    }]
+  }
+}
